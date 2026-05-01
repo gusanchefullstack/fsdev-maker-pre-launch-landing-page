@@ -1,0 +1,67 @@
+:root {
+  /* Colors — Neutral */
+  --color-neutral-900: #080c20;
+  --color-neutral-400: #777f98;
+  --color-neutral-0: #ffffff;
+
+  /* Colors — Cyan */
+  --color-cyan-400: #3ee9e5;
+
+  /* Colors — Red */
+  --color-red-400: #ff2965;
+
+  /* Colors — Blue */
+  --color-blue-800: #093f68;
+  --color-blue-gray-500: #6b8ca4;
+
+  /* Typography */
+  --font-family-base: 'Manrope', sans-serif;
+  --font-weight-medium: 500;
+  --font-weight-extrabold: 800;
+
+  /* Text Presets */
+  --text-preset-1-size: 3rem;         /* 48px */
+  --text-preset-1-mobile-size: 2rem;  /* 32px */
+  --text-preset-2-size: 2.5rem;       /* 40px */
+  --text-preset-3-size: 2rem;         /* 32px */
+  --text-preset-4-size: 1.125rem;     /* 18px */
+  --text-preset-5-size: 0.9375rem;    /* 15px */
+  --text-preset-6-size: 0.9375rem;    /* 15px */
+  --text-preset-7-size: 0.75rem;      /* 12px */
+
+  --line-height-120: 1.2;
+  --line-height-140: 1.4;
+  --line-height-160: 1.6;
+
+  /* Spacing */
+  --spacing-025: 0.125rem;   /* 2px */
+  --spacing-050: 0.25rem;    /* 4px */
+  --spacing-075: 0.375rem;   /* 6px */
+  --spacing-100: 0.5rem;     /* 8px */
+  --spacing-125: 0.625rem;   /* 10px */
+  --spacing-150: 0.75rem;    /* 12px */
+  --spacing-200: 1rem;       /* 16px */
+  --spacing-250: 1.25rem;    /* 20px */
+  --spacing-300: 1.5rem;     /* 24px */
+  --spacing-400: 2rem;       /* 32px */
+  --spacing-500: 2.5rem;     /* 40px */
+  --spacing-600: 3rem;       /* 48px */
+  --spacing-800: 4rem;       /* 64px */
+  --spacing-1000: 5rem;      /* 80px */
+  --spacing-1200: 6rem;      /* 96px */
+  --spacing-1400: 7rem;      /* 112px */
+  --spacing-1600: 8rem;      /* 128px */
+  --spacing-1800: 9rem;      /* 144px */
+  --spacing-2000: 10rem;     /* 160px */
+
+  /* Border radius */
+  --radius-sm: 0.5rem;    /* 8px */
+  --radius-md: 0.75rem;   /* 12px */
+  --radius-lg: 1.25rem;   /* 20px */
+  --radius-full: 9999px;
+
+  /* Breakpoints (for use in JS/TS if needed) */
+  --breakpoint-mobile: 375px;
+  --breakpoint-tablet: 768px;
+  --breakpoint-desktop: 1440px;
+}

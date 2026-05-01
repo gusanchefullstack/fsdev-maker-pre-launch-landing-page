@@ -1,0 +1,27 @@
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: var(--spacing-600) var(--spacing-500);
+  z-index: 10;
+}
+
+.logo {
+  width: 89px;
+  height: auto;
+}
+
+@media (max-width: 767px) {
+  .header {
+    padding: var(--spacing-500) var(--spacing-300);
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1439px) {
+  .header {
+    padding: var(--spacing-500) var(--spacing-500);
+  }
+}
