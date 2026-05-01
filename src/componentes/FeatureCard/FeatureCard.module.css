@@ -51,10 +51,11 @@
   }
 }
 
-/* Mobile: icon centered above text */
+/* Mobile: icon centered above text, text left-aligned */
 @media (max-width: 767px) {
   .iconWrapper {
     width: 120px;
     height: 120px;
+    align-self: center;
   }
 }
