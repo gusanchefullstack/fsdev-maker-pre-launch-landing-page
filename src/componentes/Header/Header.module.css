@@ -3,7 +3,7 @@
   top: 0;
   left: 0;
   width: 100%;
-  padding: var(--spacing-600) var(--spacing-500);
+  padding: var(--spacing-1000) 165px;
   z-index: 10;
 }
 
@@ -12,16 +12,18 @@
   height: auto;
 }
 
-@media (max-width: 767px) {
+/* Tablet */
+@media (min-width: 768px) and (max-width: 1199px) {
   .header {
-    padding: var(--spacing-500) var(--spacing-300);
-    display: flex;
-    justify-content: center;
+    padding: var(--spacing-600) 32px;
   }
 }
 
-@media (min-width: 768px) and (max-width: 1439px) {
+/* Mobile */
+@media (max-width: 767px) {
   .header {
-    padding: var(--spacing-500) var(--spacing-500);
+    padding: var(--spacing-400) var(--spacing-200);
+    display: flex;
+    justify-content: center;
   }
 }
