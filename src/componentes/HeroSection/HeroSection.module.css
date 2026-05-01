@@ -1,6 +1,6 @@
 .hero {
   position: relative;
-  min-height: 600px;
+  min-height: 689px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -9,7 +9,7 @@
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
-  padding: var(--spacing-2000) 0 var(--spacing-1600);
+  padding: 160px 0 0;
 }
 
 .illustrationLeft,

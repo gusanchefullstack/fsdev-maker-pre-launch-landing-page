@@ -5,8 +5,8 @@
 }
 
 .iconWrapper {
-  width: 72px;
-  height: 72px;
+  width: 160px;
+  height: 164px;
   border-radius: var(--radius-lg);
   overflow: hidden;
   background-color: var(--color-blue-800);
