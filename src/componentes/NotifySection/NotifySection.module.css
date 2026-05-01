@@ -1,6 +1,6 @@
 .notify {
   position: relative;
-  padding: var(--spacing-800) 0 var(--spacing-1200);
+  padding: var(--spacing-800) 0 var(--spacing-1600);
   background-image: url('/assets/bg-footer-squiggle.svg');
   background-repeat: no-repeat;
   background-position: center bottom;
@@ -26,14 +26,14 @@
 /* Tablet */
 @media (min-width: 768px) and (max-width: 1199px) {
   .notify {
-    padding: var(--spacing-800) var(--spacing-500) var(--spacing-1200);
+    padding: var(--spacing-800) 32px var(--spacing-1600);
   }
 }
 
 /* Mobile */
 @media (max-width: 767px) {
   .notify {
-    padding: var(--spacing-800) var(--spacing-300) var(--spacing-1200);
+    padding: var(--spacing-800) 16px var(--spacing-1600);
     text-align: left;
   }
 

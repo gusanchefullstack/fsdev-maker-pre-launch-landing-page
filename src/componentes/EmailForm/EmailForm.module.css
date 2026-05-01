@@ -61,7 +61,7 @@
 
 .button {
   height: 45px;
-  padding: 0 var(--spacing-500);
+  padding: 0 var(--spacing-400);
   background-color: var(--color-cyan-400);
   color: var(--color-neutral-900);
   border-radius: var(--radius-full);
@@ -69,7 +69,7 @@
   font-weight: var(--font-weight-extrabold);
   line-height: var(--line-height-140);
   white-space: nowrap;
-  transition: opacity 0.2s ease, background-color 0.2s ease;
+  transition: background-color 0.2s ease;
 }
 
 .button:hover {
@@ -81,12 +81,14 @@
   outline-offset: 2px;
 }
 
-/* Mobile */
+/* Mobile: stacked input + button */
 @media (max-width: 767px) {
   .form {
     flex-direction: column;
     align-items: stretch;
     gap: var(--spacing-200);
+    width: 100%;
+    max-width: 320px;
   }
 
   .fieldWrapper {

@@ -1,5 +1,5 @@
 .pricing {
-  padding: var(--spacing-1600) var(--spacing-2000);
+  padding: var(--spacing-2000) 165px;
 }
 
 .intro {
@@ -34,19 +34,27 @@
 /* Tablet */
 @media (min-width: 768px) and (max-width: 1199px) {
   .pricing {
-    padding: var(--spacing-1400) var(--spacing-500);
+    padding: var(--spacing-1600) 32px;
   }
 
   .cards {
     flex-direction: column;
-    max-width: 540px;
+    max-width: 445px;
+    gap: var(--spacing-400);
   }
 }
 
 /* Mobile */
 @media (max-width: 767px) {
   .pricing {
-    padding: var(--spacing-1200) var(--spacing-300);
+    padding: var(--spacing-1200) 16px;
+  }
+
+  .intro {
+    text-align: left;
+    margin-left: 0;
+    margin-right: 0;
+    max-width: 100%;
   }
 
   .cards {

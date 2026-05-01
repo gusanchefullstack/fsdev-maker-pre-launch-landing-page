@@ -36,15 +36,25 @@
   color: var(--color-neutral-400);
 }
 
-/* Tablet: horizontal layout */
+/* Tablet: icon left, text right */
 @media (min-width: 768px) and (max-width: 1199px) {
   .card {
     flex-direction: row;
     align-items: flex-start;
-    gap: var(--spacing-500);
+    gap: 48px;
   }
 
   .iconWrapper {
+    width: 120px;
+    height: 120px;
     flex-shrink: 0;
+  }
+}
+
+/* Mobile: icon centered above text */
+@media (max-width: 767px) {
+  .iconWrapper {
+    width: 120px;
+    height: 120px;
   }
 }
