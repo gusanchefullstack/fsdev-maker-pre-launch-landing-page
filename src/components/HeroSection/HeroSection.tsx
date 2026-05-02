@@ -23,7 +23,8 @@ function HeroSection() {
         </p>
         <img
           src="/assets/icon-scroll.svg"
-          alt="Scroll down"
+          alt=""
+          aria-hidden="true"
           className={styles.scrollIcon}
         />
       </div>
