@@ -51,12 +51,13 @@ function EmailForm() {
           placeholder="Email address"
           className={`${styles.input} ${error ? styles.inputError : ''}`}
           aria-invalid={error ? 'true' : 'false'}
-          aria-describedby={errorId}
+          aria-describedby={error ? errorId : undefined}
           autoComplete="email"
         />
         <p
           id={errorId}
           className={`${styles.errorMessage} ${!error ? styles.errorMessageHidden : ''}`}
+          role="status"
           aria-live="polite"
           aria-atomic="true"
         >
