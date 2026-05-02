@@ -39,7 +39,7 @@ function EmailForm() {
       aria-label="Email notification signup"
     >
       <div className={styles.fieldWrapper}>
-        <label htmlFor={inputId} className={styles.visuallyHidden}>
+        <label htmlFor={inputId} className="srOnly">
           Email address
         </label>
         <input

@@ -35,7 +35,7 @@ const features = [
 function FeaturesSection() {
   return (
     <section className={styles.features} aria-labelledby="features-heading">
-      <h2 id="features-heading" className={styles.visuallyHidden}>
+      <h2 id="features-heading" className="srOnly">
         Benefits
       </h2>
       <ul className={styles.grid}>

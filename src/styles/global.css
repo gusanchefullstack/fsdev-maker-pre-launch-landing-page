@@ -26,6 +26,7 @@ svg {
   max-width: 100%;
 }
 
+/* Reset native button chrome; focus affordance is restored explicitly below */
 button {
   cursor: pointer;
   font-family: inherit;

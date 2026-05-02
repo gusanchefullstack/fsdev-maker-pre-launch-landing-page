@@ -39,3 +39,19 @@ npm-debug.log*
 .DS_Store
 Thumbs.db
 .vercel
+
+# Source template (not served — kept for reference only)
+index-source.html
+
+# Duplicate of public/assets/ — canonical location is public/assets/
+/assets/
+
+# Merged from src/.gitignore (Vite defaults)
+dist-ssr
+*.local
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+pnpm-debug.log*
+lerna-debug.log*
