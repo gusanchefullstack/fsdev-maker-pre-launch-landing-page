@@ -1,10 +1,11 @@
 .card {
   border-radius: var(--radius-md);
-  padding: var(--spacing-600);
+  padding: var(--spacing-600) var(--spacing-400);
   display: flex;
   flex-direction: column;
   gap: var(--spacing-300);
   flex: 1;
+  position: relative;
 }
 
 .free {
@@ -18,8 +19,16 @@
 }
 
 .icon {
-  width: 48px;
-  height: 48px;
+  position: absolute;
+  top: -23px;
+  left: 37px;
+  width: 46px;
+  height: auto;
+}
+
+.paid .icon {
+  top: -32px;
+  width: 51px;
 }
 
 .planLabel {

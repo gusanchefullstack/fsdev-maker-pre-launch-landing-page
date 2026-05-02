@@ -25,8 +25,6 @@ function HeroSection() {
           src="/assets/icon-scroll.svg"
           alt="Scroll down"
           className={styles.scrollIcon}
-          width="32"
-          height="56"
         />
       </div>
 

@@ -64,8 +64,9 @@
 }
 
 .scrollIcon {
-  margin: 0 auto;
-  padding-bottom: var(--spacing-600);
+  width: 26px;
+  height: 42px;
+  margin: 0 auto var(--spacing-600);
 }
 
 /* Tablet */
