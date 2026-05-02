@@ -65,18 +65,16 @@ Users should be able to:
 }
 ```
 
-**Accessible form validation** — Using `aria-invalid`, `aria-describedby`, and `role="alert"` ensures screen readers announce validation errors correctly without any JavaScript focus management:
+**Accessible form validation** — Using `aria-invalid`, `aria-describedby`, and `role="status"` with `aria-live="polite"` ensures screen readers announce validation errors without interrupting the user. `role="status"` pairs correctly with `aria-live="polite"` — using `role="alert"` would create a conflicting assertiveness level:
 
 ```tsx
 <input
-  aria-invalid={!!error}
+  aria-invalid={error ? 'true' : 'false'}
   aria-describedby={error ? 'email-error' : undefined}
 />
-{error && (
-  <p id="email-error" role="alert" className={styles.errorMessage}>
-    {errorMessages[error]}
-  </p>
-)}
+<p id="email-error" role="status" aria-live="polite" aria-atomic="true">
+  {error ? errorMessages[error] : ''}
+</p>
 ```
 
 **Importing from `vitest/config`** — When using Vite with Vitest, importing `defineConfig` from `vitest/config` (rather than `vite`) properly exposes the `test` property on the config type, preventing TypeScript build errors in CI/CD pipelines.
