@@ -1,8 +1,8 @@
-import Header from './componentes/Header/Header'
-import HeroSection from './componentes/HeroSection/HeroSection'
-import FeaturesSection from './componentes/FeaturesSection/FeaturesSection'
-import PricingSection from './componentes/PricingSection/PricingSection'
-import NotifySection from './componentes/NotifySection/NotifySection'
+import Header from './components/Header/Header'
+import HeroSection from './components/HeroSection/HeroSection'
+import FeaturesSection from './components/FeaturesSection/FeaturesSection'
+import PricingSection from './components/PricingSection/PricingSection'
+import NotifySection from './components/NotifySection/NotifySection'
 
 function App() {
   return (

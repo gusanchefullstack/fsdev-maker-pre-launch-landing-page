@@ -41,8 +41,16 @@
 }
 
 .input:focus {
-  outline: none;
   border-color: var(--color-cyan-400);
+}
+
+.input:focus-visible {
+  outline: 2px solid var(--color-cyan-400);
+  outline-offset: 2px;
+}
+
+.input:focus:not(:focus-visible) {
+  outline: none;
 }
 
 .inputError {
@@ -57,6 +65,11 @@
   line-height: var(--line-height-160);
   color: var(--color-red-400);
   font-style: italic;
+  min-height: 1em;
+}
+
+.errorMessageHidden {
+  visibility: hidden;
 }
 
 .button {

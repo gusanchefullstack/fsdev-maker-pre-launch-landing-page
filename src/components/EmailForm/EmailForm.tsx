@@ -51,14 +51,17 @@ function EmailForm() {
           placeholder="Email address"
           className={`${styles.input} ${error ? styles.inputError : ''}`}
           aria-invalid={error ? 'true' : 'false'}
-          aria-describedby={error ? errorId : undefined}
+          aria-describedby={errorId}
           autoComplete="email"
         />
-        {error && (
-          <p id={errorId} className={styles.errorMessage} role="alert">
-            {ERROR_MESSAGES[error]}
-          </p>
-        )}
+        <p
+          id={errorId}
+          className={`${styles.errorMessage} ${!error ? styles.errorMessageHidden : ''}`}
+          aria-live="polite"
+          aria-atomic="true"
+        >
+          {error ? ERROR_MESSAGES[error] : ''}
+        </p>
       </div>
       <button type="submit" className={styles.button}>
         Get notified
