@@ -57,7 +57,6 @@ function EmailForm() {
         <p
           id={errorId}
           className={`${styles.errorMessage} ${!error ? styles.errorMessageHidden : ''}`}
-          role={error ? 'alert' : undefined}
           aria-live="polite"
           aria-atomic="true"
         >
